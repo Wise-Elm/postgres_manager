@@ -69,3 +69,12 @@
     print(y.select_return)
     
     [(1, 'graham', 'Amazing'), (2, 'Shayla', 'Great')]
+    
+## Example terminal feedback during error displaying useful information.
+    Error connecting to database (just_bad) on attempt 1.
+    Error connecting to database (just_bad) on attempt 2.
+    Error connecting to database (just_bad) on attempt 3.
+    Failed to connect with database (just_bad). Maximum attempts reached (4).
+    Creation of database cursor failed.
+    ('Failed to connect with database (just_bad). Maximum attempts reached (4).', OperationalError('connection to server at "localhost" (127.0.0.1),   port 5432 failed: FATAL:  database "just_bad" does not exist\n'))
+    DBManager took 6.041313s to run.

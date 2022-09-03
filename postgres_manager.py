@@ -103,6 +103,13 @@ class DBManager:
 
     Example:
         DBManager(connection_info=connection_info)
+
+    Public Attributes:
+        select_return: Returns a list of tuples containing the select statement results.
+        usage: Returns a message describing the usage of this class.
+        
+    Public Methods:
+        self.usage
     """
 
     @_timed  # Time instantiation of instance.

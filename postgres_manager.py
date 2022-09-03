@@ -31,11 +31,16 @@ Description:
         SELECT statement.
 
 Attributes:
-    MAX_ATTEMPTS: Default number of attempts when trying to connect with database.
     CON_SLEEP: Seconds between database connection attempts.
+    MAX_ATTEMPTS: Default number of attempts when trying to connect with database.
+    SELECT_RESULTS: Number of db tables rows to print to screen with select statement.
 
 Composition Attributes:
     Line length = 88 characters.
+    
+Python Development Version:
+    3.10
+    Probably works with any Python 3 version.
 """
 
 import time
@@ -43,8 +48,9 @@ import psycopg2
 from functools import wraps
 from time import perf_counter
 
-MAX_ATTEMPTS = 4  # Max attempts when connecting to database.
 CON_SLEEP = 2  # Seconds between connection attempts.
+MAX_ATTEMPTS = 4  # Max attempts when connecting to database.
+SELECT_RESULTS = 5  # Number of db tables rows to print to screen with select statement.
 
 
 def _timed(fn):
@@ -107,9 +113,6 @@ class DBManager:
     Public Attributes:
         select_return: Returns a list of tuples containing the select statement results.
         usage: Returns a message describing the usage of this class.
-        
-    Public Methods:
-        self.usage
     """
 
     @_timed  # Time instantiation of instance.
@@ -378,8 +381,8 @@ class DBManager:
             self._cursor.execute(select_sql)
             print('Queue for Select SQL successful.')
             result = self._cursor.fetchall()
-            print('\nDisplaying select statement results...')
-            print(str(result[:6]) + '\n')
+            print(f'\nDisplaying first {SELECT_RESULTS} select statement results...')
+            print(str(result[:SELECT_RESULTS + 1]) + '\n')
         except BaseException as exc:
             msg = f"Error with 'SELECT' statement. Ref: {exc}."
             err = DBManagerError(msg)

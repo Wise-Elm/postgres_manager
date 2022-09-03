@@ -27,11 +27,16 @@
         SELECT statement.
 
 # Attributes:
-    MAX_ATTEMPTS: Default number of attempts when trying to connect with database.
     CON_SLEEP: Seconds between database connection attempts.
+    MAX_ATTEMPTS: Default number of attempts when trying to connect with database.
+    SELECT_RESULTS: Number of db tables rows to print to screen with select statement.
 
 # Composition Attributes:
     Line length = 88 characters.
+    
+# Python Development Version:
+    3.10
+    Probably works with any Python 3 version.
     
 # Usage Example:
     from postgres_manager import DBManager

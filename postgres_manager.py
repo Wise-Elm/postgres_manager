@@ -47,7 +47,7 @@ MAX_ATTEMPTS = 4  # Max attempts when connecting to database.
 CON_SLEEP = 2  # Seconds between connection attempts.
 
 
-def timed(fn):
+def _timed(fn):
     """Function timer.
 
     Args:
@@ -67,7 +67,7 @@ def timed(fn):
         end = perf_counter()
         elapsed = end - start
 
-        print('DBManager took {0:.6f}s to run.'.format(elapsed))
+        print('DBManager took {0:.6f}s to instantiate .'.format(elapsed))
 
         return result
 
@@ -105,20 +105,21 @@ class DBManager:
         DBManager(connection_info=connection_info)
     """
 
-    @timed  # Time instantiation of instance.
+    @_timed  # Time instantiation of instance.
     def __init__(self, connection_info=None):
-        """Initialize instance."""
+        """instantiate instance."""
 
-        self.connection_info = connection_info
-        if self.connection_info:
-            self.create_tables_sql = True if self.connection_info['table_sql'] else None
-            self.insert_sql = True if self.connection_info['insert_sql'] else None
-            self.select_sql = True if self.connection_info['select_sql'] else None
-        self.cursor = None  # Database cursor.
-        self.connection = None  # Database connection.
-        self.automation_manager()  # Call to method that automates instance.
+        self._connection_info = connection_info
+        if self._connection_info:
+            self._create_tables_sql = True if self._connection_info['table_sql'] else None
+            self._insert_sql = True if self._connection_info['insert_sql'] else None
+            self._select_sql = True if self._connection_info['select_sql'] else None
+        self._cursor = None  # Database cursor.
+        self._connection = None  # Database connection.
+        self.select_return = None
+        self._automation_manager()  # Call to method that automates instance.
 
-    def automation_manager(self):
+    def _automation_manager(self):
         """Main automation method for this class.
 
         Args:
@@ -130,7 +131,7 @@ class DBManager:
         """
 
         # Display usage message.
-        if self.connection_info is None:
+        if self._connection_info is None:
             self.usage()
             return
 
@@ -141,17 +142,17 @@ class DBManager:
         commit = None
 
         # Database cursor.
-        cursor_result = self.connect(self.connection_info)
+        cursor_result = self._connect(self._connection_info)
         if isinstance(cursor_result, DBManagerError):
             print('Creation of database cursor failed.')
             print(cursor_result)
             return
         else:
-            self.cursor = cursor_result
+            self._cursor = cursor_result
 
         # Create tables.
-        if self.create_tables_sql:
-            tables_result = self.make_tables()
+        if self._create_tables_sql:
+            tables_result = self._make_tables()
             if isinstance(tables_result, DBManagerError):
                 print('Creating tables failed.')
                 commit = False
@@ -160,8 +161,8 @@ class DBManager:
                 commit = True
 
         # Insert.
-        if self.insert_sql:
-            insert_result = self.insert()
+        if self._insert_sql:
+            insert_result = self._insert()
             if isinstance(insert_result, DBManagerError):
                 print('Insert statement failed.')
                 commit = False
@@ -170,17 +171,18 @@ class DBManager:
                 commit = True
 
         # Select.
-        select_result = None
-        if self.select_sql:
-            select_result = self.select()
+        if self._select_sql:
+            select_result = self._select()
             if isinstance(select_result, DBManagerError):
                 print('Insert statement failed.')
                 commit = False
                 print(select_result)
+            else:
+                self.select_return = select_result
 
         # Commit to database.
         if commit:
-            result = self.commit()
+            result = self._commit()
             if isinstance(result, DBManagerError):
                 print('Commit to database failed.')
                 print(result)
@@ -192,11 +194,11 @@ class DBManager:
             print('Nothing to commit.')
 
         # Disconnect from database.
-        self.disconnect()
+        self._disconnect()
 
         return select_result or True
 
-    def commit(self):
+    def _commit(self):
         """Commit to database.
 
         Commit SQL statements stored in self.connection.
@@ -214,14 +216,14 @@ class DBManager:
 
         try:
             print('Attempting commit to database...')
-            self.connection.commit()
+            self._connection.commit()
             result = True
         except Exception as exc:
             result = DBManagerError(exc)
         finally:
             return result
 
-    def connect(self, con_info):
+    def _connect(self, con_info):
         """Establish database connection.
 
         Args:
@@ -242,14 +244,14 @@ class DBManager:
             con_exc = None  # Capture Exceptions, if any.
 
             try:
-                self.connection = psycopg2.connect(
+                self._connection = psycopg2.connect(
                     database=con_info['database'],
                     user=con_info['user'],
                     password=con_info['password'],
                     host=con_info['host'],
                     port=con_info['port']
                 )
-                cur = self.connection.cursor()
+                cur = self._connection.cursor()
                 msg = f"Connection to database ({con_info['database']}) established " \
                       f"on attempt {con_attempt}."
                 print(msg)
@@ -270,7 +272,7 @@ class DBManager:
 
         return cur
 
-    def make_tables(self):
+    def _make_tables(self):
         """Create database tables.
 
         Args:
@@ -280,7 +282,7 @@ class DBManager:
             err(DBManagerError) or None
         """
 
-        table_sql = self.connection_info['table_sql']
+        table_sql = self._connection_info['table_sql']
         upper = table_sql.upper()
 
         if 'INSERT INTO' in upper:
@@ -295,7 +297,7 @@ class DBManager:
             return err
 
         try:
-            self.cursor.execute(table_sql)
+            self._cursor.execute(table_sql)
             msg = 'Queue for Table creation SQL successful.'
             print(msg)
         except BaseException as exc:
@@ -305,7 +307,7 @@ class DBManager:
 
         return None
 
-    def insert(self):
+    def _insert(self):
         """Execute insert sql.
 
         Args:
@@ -315,7 +317,7 @@ class DBManager:
             err(DBManagerError) or None
         """
 
-        insert_sql = self.connection_info['insert_sql']
+        insert_sql = self._connection_info['insert_sql']
         upper = insert_sql.upper()
 
         if 'SELECT' in upper:
@@ -328,7 +330,7 @@ class DBManager:
             return err
 
         try:
-            self.cursor.execute(insert_sql)
+            self._cursor.execute(insert_sql)
             msg = 'Queue for Insert SQL successful.'
             print(msg)
         except BaseException as exc:
@@ -338,17 +340,17 @@ class DBManager:
 
         return None
 
-    def select(self):
+    def _select(self):
         """Execute select statement.
 
         Args:
             None
 
         Returns:
-            err(DBManagerError) or None
+            err(DBManagerError) or result(List(tuples)) containing the desired db rows.
         """
 
-        select_sql = self.connection_info['select_sql']
+        select_sql = self._connection_info['select_sql']
         upper = select_sql.upper()
 
         if 'CREATE' in upper:
@@ -366,24 +368,24 @@ class DBManager:
             return err
 
         try:
-            self.cursor.execute(select_sql)
+            self._cursor.execute(select_sql)
             print('Queue for Select SQL successful.')
-            result = self.cursor.fetchall()
+            result = self._cursor.fetchall()
             print('\nDisplaying select statement results...')
-            print(str(result) + '\n')
+            print(str(result[:6]) + '\n')
         except BaseException as exc:
             msg = f"Error with 'SELECT' statement. Ref: {exc}."
             err = DBManagerError(msg)
             return err
 
-        return None
+        return result
 
-    def disconnect(self):
+    def _disconnect(self):
         """Disconnect from database."""
 
-        if self.cursor:
-            self.cursor.close()
-            msg = f"Connection to database ({self.connection_info['database']}) " \
+        if self._cursor:
+            self._cursor.close()
+            msg = f"Connection to database ({self._connection_info['database']}) " \
                   f"terminated."
             print(msg)
 

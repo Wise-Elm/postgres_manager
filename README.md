@@ -32,3 +32,40 @@
 
 # Composition Attributes:
     Line length = 88 characters.
+    
+# Usage Example:
+    from postgres_manager import DBManager
+
+    select = "SELECT * FROM employee"
+    insert = "INSERT INTO employee(name, state) VALUES('Shayla', 'Great')"
+
+    x = {
+        'database': 'just_test',  # database name
+        'user': 'me',  # username
+        'password': '1234567',  # password
+        'host': 'localhost',  # host name
+        'port': '5432',  # port number
+        'table_sql': None,  # sql statement for table creation
+        'insert_sql': insert,  # sql statement for insert
+        'select_sql': select  # sql statement for select
+    }
+    
+    y = DBManager(x)
+
+## Prints to terminal:
+    Connection to database (just_test) established on attempt 1.
+    Queue for Insert SQL successful.
+    Queue for Select SQL successful.
+
+    Displaying select statement results...
+    [(1, 'graham', 'Amazing'), (2, 'Shayla', 'Great')]
+
+    Attempting commit to database...
+    Commit successful.
+    Connection to database (just_test) terminated.
+    DBManager took 0.015147s to run.
+    
+## Returns a list of tuples accessable in the instance.select_return attribute:
+    print(y.select_return)
+    
+    [(1, 'graham', 'Amazing'), (2, 'Shayla', 'Great')]

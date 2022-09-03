@@ -112,6 +112,8 @@ class DBManager:
 
     Public Attributes:
         select_return: Returns a list of tuples containing the select statement results.
+        
+    Public Methods:
         usage: Returns a message describing the usage of this class.
     """
 

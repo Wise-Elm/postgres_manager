@@ -73,7 +73,7 @@ def _timed(fn):
         end = perf_counter()
         elapsed = end - start
 
-        print('DBManager took {0:.6f}s to instantiate .'.format(elapsed))
+        print('DBManager took {0:.6f}s to instantiate.'.format(elapsed))
 
         return result
 

@@ -406,7 +406,7 @@ def main():
     """Run DBManager class."""
 
     db = DBManager()
-    return db
+    print(db.usage())
 
 
 if __name__ == '__main__':

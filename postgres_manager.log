@@ -1,4 +1,230 @@
-[2022-09-04 19:48:20,637] - a766ca6d-9b73-43c5-8f09-a7c1db199c93 - INFO - [root:496] - check
-[2022-09-04 19:49:48,342] - 20a4e374-9733-47fc-a49f-c788350c9541 - INFO - [root:499] - check
-[2022-09-04 19:50:04,296] - ca69fd0a-be89-4de6-a8ad-0663b1ad8f4b - INFO - [root:499] - check
-[2022-09-04 19:50:04,296] - ca69fd0a-be89-4de6-a8ad-0663b1ad8f4b - WARNING - [root:500] - check
+[2022-09-06 11:28:20,556] - 4afbac69-71f4-4d5b-bbd1-cf705c31290d - INFO - [root:324] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:28:20 2022.
+[2022-09-06 11:28:20,559] - 4afbac69-71f4-4d5b-bbd1-cf705c31290d - INFO - [root:214] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:28:20,560] - 4afbac69-71f4-4d5b-bbd1-cf705c31290d - INFO - [root:403] - Connection to database (just_test) terminated: Tue Sep  6 11:28:20 2022.
+[2022-09-06 11:30:25,343] - 9cfe13f8-b5d3-41dc-b842-bf79fc1ae27b - INFO - [root:323] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:30:25 2022.
+[2022-09-06 11:30:25,345] - 9cfe13f8-b5d3-41dc-b842-bf79fc1ae27b - INFO - [root:213] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:30:25,345] - 9cfe13f8-b5d3-41dc-b842-bf79fc1ae27b - INFO - [root:402] - Connection to database (just_test) terminated: Tue Sep  6 11:30:25 2022.
+[2022-09-06 11:34:10,570] - c130a3a5-fc90-4f52-8b7b-6259ce1f34a7 - INFO - [root:326] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:34:10 2022.
+[2022-09-06 11:34:10,571] - c130a3a5-fc90-4f52-8b7b-6259ce1f34a7 - INFO - [root:216] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:34:10,571] - c130a3a5-fc90-4f52-8b7b-6259ce1f34a7 - INFO - [root:405] - Connection to database (just_test) terminated: Tue Sep  6 11:34:10 2022.
+[2022-09-06 11:34:55,354] - 1d9f1082-35a2-4ca5-8b04-fee6faa76a24 - INFO - [root:326] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:34:55 2022.
+[2022-09-06 11:34:55,356] - 1d9f1082-35a2-4ca5-8b04-fee6faa76a24 - INFO - [root:216] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:34:55,356] - 1d9f1082-35a2-4ca5-8b04-fee6faa76a24 - INFO - [root:405] - Connection to database (just_test) terminated: Tue Sep  6 11:34:55 2022.
+[2022-09-06 11:34:56,469] - 48d8f25c-52fe-4857-9940-5e76216d0887 - INFO - [root:326] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:34:56 2022.
+[2022-09-06 11:34:56,479] - 48d8f25c-52fe-4857-9940-5e76216d0887 - INFO - [root:216] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:34:56,480] - 48d8f25c-52fe-4857-9940-5e76216d0887 - INFO - [root:405] - Connection to database (just_test) terminated: Tue Sep  6 11:34:56 2022.
+[2022-09-06 11:35:19,332] - 256a5e4b-9b0e-44e4-84ef-8423298517ad - INFO - [root:325] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:35:19 2022.
+[2022-09-06 11:35:19,333] - 256a5e4b-9b0e-44e4-84ef-8423298517ad - INFO - [root:215] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:35:19,333] - 256a5e4b-9b0e-44e4-84ef-8423298517ad - INFO - [root:404] - Connection to database (just_test) terminated: Tue Sep  6 11:35:19 2022.
+[2022-09-06 11:39:38,911] - 40371652-3629-409b-933e-24309770235d - INFO - [root:327] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:39:38 2022.
+[2022-09-06 11:39:38,912] - 40371652-3629-409b-933e-24309770235d - INFO - [root:217] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:39:38,912] - 40371652-3629-409b-933e-24309770235d - INFO - [root:406] - Connection to database (just_test) terminated: Tue Sep  6 11:39:38 2022.
+[2022-09-06 11:39:41,565] - b905336d-7bb1-4ed2-9da8-890a232fce34 - INFO - [root:327] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:39:41 2022.
+[2022-09-06 11:39:41,567] - b905336d-7bb1-4ed2-9da8-890a232fce34 - INFO - [root:217] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:39:41,567] - b905336d-7bb1-4ed2-9da8-890a232fce34 - INFO - [root:406] - Connection to database (just_test) terminated: Tue Sep  6 11:39:41 2022.
+[2022-09-06 11:39:53,055] - b400aa02-b16c-469b-bb12-3fec60a86e57 - INFO - [root:327] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:39:53 2022.
+[2022-09-06 11:39:53,057] - b400aa02-b16c-469b-bb12-3fec60a86e57 - INFO - [root:217] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:39:53,058] - b400aa02-b16c-469b-bb12-3fec60a86e57 - INFO - [root:406] - Connection to database (just_test) terminated: Tue Sep  6 11:39:53 2022.
+[2022-09-06 11:42:31,687] - 119952dc-48d2-478a-b2af-99ec734acf95 - INFO - [root:323] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:42:31 2022.
+[2022-09-06 11:42:31,690] - 119952dc-48d2-478a-b2af-99ec734acf95 - INFO - [root:213] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:42:31,691] - 119952dc-48d2-478a-b2af-99ec734acf95 - INFO - [root:402] - Connection to database (just_test) terminated: Tue Sep  6 11:42:31 2022.
+[2022-09-06 11:42:38,449] - 27da8645-513c-4acc-bcec-a866a878cf53 - INFO - [root:323] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:42:38 2022.
+[2022-09-06 11:42:38,452] - 27da8645-513c-4acc-bcec-a866a878cf53 - INFO - [root:213] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:42:38,452] - 27da8645-513c-4acc-bcec-a866a878cf53 - INFO - [root:402] - Connection to database (just_test) terminated: Tue Sep  6 11:42:38 2022.
+[2022-09-06 11:42:45,648] - 3addd5c8-f445-4030-9631-6f3a6a7ea4bb - INFO - [root:323] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:42:45 2022.
+[2022-09-06 11:42:45,650] - 3addd5c8-f445-4030-9631-6f3a6a7ea4bb - INFO - [root:213] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:42:45,650] - 3addd5c8-f445-4030-9631-6f3a6a7ea4bb - INFO - [root:402] - Connection to database (just_test) terminated: Tue Sep  6 11:42:45 2022.
+[2022-09-06 11:43:07,216] - 8713e786-b113-4ac4-b3f8-0e1ca32650ba - INFO - [root:323] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:43:07 2022.
+[2022-09-06 11:43:07,218] - 8713e786-b113-4ac4-b3f8-0e1ca32650ba - INFO - [root:213] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:43:07,219] - 8713e786-b113-4ac4-b3f8-0e1ca32650ba - INFO - [root:402] - Connection to database (just_test) terminated: Tue Sep  6 11:43:07 2022.
+[2022-09-06 11:43:08,057] - e898267c-2e12-40bb-965f-122c3da7bc9a - INFO - [root:323] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:43:08 2022.
+[2022-09-06 11:43:08,058] - e898267c-2e12-40bb-965f-122c3da7bc9a - INFO - [root:213] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:43:08,059] - e898267c-2e12-40bb-965f-122c3da7bc9a - INFO - [root:402] - Connection to database (just_test) terminated: Tue Sep  6 11:43:08 2022.
+[2022-09-06 11:43:08,587] - a7a1d3ca-8c48-4f3b-b071-7a6182cf7f1f - INFO - [root:323] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:43:08 2022.
+[2022-09-06 11:43:08,589] - a7a1d3ca-8c48-4f3b-b071-7a6182cf7f1f - INFO - [root:213] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:43:08,589] - a7a1d3ca-8c48-4f3b-b071-7a6182cf7f1f - INFO - [root:402] - Connection to database (just_test) terminated: Tue Sep  6 11:43:08 2022.
+[2022-09-06 11:43:09,076] - 0d8f68be-42ac-4456-96b4-14b62730034e - INFO - [root:323] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:43:09 2022.
+[2022-09-06 11:43:09,077] - 0d8f68be-42ac-4456-96b4-14b62730034e - INFO - [root:213] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:43:09,077] - 0d8f68be-42ac-4456-96b4-14b62730034e - INFO - [root:402] - Connection to database (just_test) terminated: Tue Sep  6 11:43:09 2022.
+[2022-09-06 11:43:22,806] - 9f8f8fb5-8f26-4270-9c79-693110b78e93 - INFO - [root:323] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:43:22 2022.
+[2022-09-06 11:43:22,807] - 9f8f8fb5-8f26-4270-9c79-693110b78e93 - INFO - [root:213] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:43:22,808] - 9f8f8fb5-8f26-4270-9c79-693110b78e93 - INFO - [root:402] - Connection to database (just_test) terminated: Tue Sep  6 11:43:22 2022.
+[2022-09-06 11:43:39,210] - f60546cf-4296-4d79-aeae-f39f41aacc1f - INFO - [root:323] - Connection to database (just_test) established on attempt 1: Tue Sep  6 11:43:39 2022.
+[2022-09-06 11:43:39,212] - f60546cf-4296-4d79-aeae-f39f41aacc1f - INFO - [root:213] - Queue for Create SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 11:43:39,212] - f60546cf-4296-4d79-aeae-f39f41aacc1f - INFO - [root:402] - Connection to database (just_test) terminated: Tue Sep  6 11:43:39 2022.
+[2022-09-06 12:01:54,485] - 02a96a16-665c-479e-9218-cf29a0632754 - INFO - [root:300] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:01:54 2022.
+[2022-09-06 12:01:54,486] - 02a96a16-665c-479e-9218-cf29a0632754 - INFO - [root:384] - Queue for CREATE SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 12:01:54,487] - 02a96a16-665c-479e-9218-cf29a0632754 - INFO - [root:406] - Connection to database (just_test) terminated: Tue Sep  6 12:01:54 2022.
+[2022-09-06 12:05:14,786] - 8e3c5944-06ae-4dd5-92c0-8cf44df40b26 - INFO - [root:278] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:05:14 2022.
+[2022-09-06 12:05:35,543] - 4408dbef-ff81-431e-b03b-4132de7bf188 - INFO - [root:278] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:05:35 2022.
+[2022-09-06 12:05:35,545] - 4408dbef-ff81-431e-b03b-4132de7bf188 - INFO - [root:364] - Queue for CREATE SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 12:05:35,545] - 4408dbef-ff81-431e-b03b-4132de7bf188 - INFO - [root:388] - Connection to database (just_test) terminated: Tue Sep  6 12:05:35 2022.
+[2022-09-06 12:06:35,984] - e313da63-4722-4e92-a4df-a4c404ef265f - INFO - [root:257] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:06:35 2022.
+[2022-09-06 12:06:35,986] - e313da63-4722-4e92-a4df-a4c404ef265f - INFO - [root:343] - Queue for CREATE SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 12:06:35,986] - e313da63-4722-4e92-a4df-a4c404ef265f - INFO - [root:367] - Connection to database (just_test) terminated: Tue Sep  6 12:06:35 2022.
+[2022-09-06 12:06:52,517] - 24626257-e337-4b44-b40b-a7a674a785b5 - INFO - [root:257] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:06:52 2022.
+[2022-09-06 12:06:52,518] - 24626257-e337-4b44-b40b-a7a674a785b5 - INFO - [root:343] - Queue for SELECT SQL (SELECT * FROM employee) successful. Don't forget to commit.
+[2022-09-06 12:06:52,518] - 24626257-e337-4b44-b40b-a7a674a785b5 - INFO - [root:367] - Connection to database (just_test) terminated: Tue Sep  6 12:06:52 2022.
+[2022-09-06 12:07:01,591] - 184b9ef4-eb88-4cc7-b4b1-51db3dfe1c8e - INFO - [root:257] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:07:01 2022.
+[2022-09-06 12:07:01,594] - 184b9ef4-eb88-4cc7-b4b1-51db3dfe1c8e - INFO - [root:343] - Queue for SELECT SQL (SELECT * FROM employee) successful. Don't forget to commit.
+[2022-09-06 12:07:01,594] - 184b9ef4-eb88-4cc7-b4b1-51db3dfe1c8e - INFO - [root:367] - Connection to database (just_test) terminated: Tue Sep  6 12:07:01 2022.
+[2022-09-06 12:08:03,838] - 28597ee1-7fd1-4174-9819-8d67f523d771 - INFO - [root:257] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:08:03 2022.
+[2022-09-06 12:08:20,226] - 28597ee1-7fd1-4174-9819-8d67f523d771 - INFO - [root:343] - Queue for SELECT SQL (SELECT * FROM employee) successful. Don't forget to commit.
+[2022-09-06 12:09:20,567] - 3baf6e57-a0cc-44ef-9045-163194ed8bb1 - INFO - [root:257] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:09:20 2022.
+[2022-09-06 12:09:20,568] - 3baf6e57-a0cc-44ef-9045-163194ed8bb1 - INFO - [root:343] - Queue for SELECT SQL (SELECT * FROM employee) successful. Don't forget to commit.
+[2022-09-06 12:09:20,568] - 3baf6e57-a0cc-44ef-9045-163194ed8bb1 - INFO - [root:367] - Connection to database (just_test) terminated: Tue Sep  6 12:09:20 2022.
+[2022-09-06 12:48:07,042] - 6f24f9ab-7f4c-4d8b-8d6f-188e294fba8a - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:48:07 2022.
+[2022-09-06 12:48:07,043] - 6f24f9ab-7f4c-4d8b-8d6f-188e294fba8a - INFO - [root:440] - Queue for SELECT SQL (SELECT * FROM employee) successful. Don't forget to commit.
+[2022-09-06 12:48:07,044] - 6f24f9ab-7f4c-4d8b-8d6f-188e294fba8a - INFO - [root:464] - Connection to database (just_test) terminated: Tue Sep  6 12:48:07 2022.
+[2022-09-06 12:49:20,304] - 6c8db91d-a464-4280-9fa0-09a8f1bb36c9 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:49:20 2022.
+[2022-09-06 12:49:20,310] - 6c8db91d-a464-4280-9fa0-09a8f1bb36c9 - INFO - [root:440] - Queue for DROP TABLE SQL (DROP TABLE employee) successful. Don't forget to commit.
+[2022-09-06 12:49:20,310] - 6c8db91d-a464-4280-9fa0-09a8f1bb36c9 - ERROR - [root:452] - Error with DROP TABLE (DROP TABLE employee). Ref: no results to fetch.
+[2022-09-06 12:49:20,311] - 6c8db91d-a464-4280-9fa0-09a8f1bb36c9 - INFO - [root:464] - Connection to database (just_test) terminated: Tue Sep  6 12:49:20 2022.
+[2022-09-06 12:49:48,830] - eae6a939-55f1-44f6-ba1d-d4d331f2e3b9 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:49:48 2022.
+[2022-09-06 12:49:48,832] - eae6a939-55f1-44f6-ba1d-d4d331f2e3b9 - INFO - [root:440] - Queue for DROP TABLE SQL (DROP TABLE employee) successful. Don't forget to commit.
+[2022-09-06 12:49:48,832] - eae6a939-55f1-44f6-ba1d-d4d331f2e3b9 - ERROR - [root:452] - Error with DROP TABLE (DROP TABLE employee). Ref: no results to fetch.
+[2022-09-06 12:49:48,832] - eae6a939-55f1-44f6-ba1d-d4d331f2e3b9 - INFO - [root:464] - Connection to database (just_test) terminated: Tue Sep  6 12:49:48 2022.
+[2022-09-06 12:51:34,211] - 4608eb20-a204-4678-a144-f2df3d9425c3 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:51:34 2022.
+[2022-09-06 12:51:34,215] - 4608eb20-a204-4678-a144-f2df3d9425c3 - INFO - [root:440] - Queue for DROP TABLE SQL (DROP TABLE employee) successful. Don't forget to commit.
+[2022-09-06 12:51:34,215] - 4608eb20-a204-4678-a144-f2df3d9425c3 - ERROR - [root:452] - Error with DROP TABLE (DROP TABLE employee). Ref: no results to fetch.
+[2022-09-06 12:51:34,216] - 4608eb20-a204-4678-a144-f2df3d9425c3 - INFO - [root:464] - Connection to database (just_test) terminated: Tue Sep  6 12:51:34 2022.
+[2022-09-06 12:51:50,911] - fb762306-ec81-432b-9316-db5965a2ad85 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:51:50 2022.
+[2022-09-06 12:53:54,136] - 5b663cf6-289c-46ac-b9e4-3d5b19be14b6 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:53:54 2022.
+[2022-09-06 12:54:58,738] - 5b663cf6-289c-46ac-b9e4-3d5b19be14b6 - ERROR - [root:433] - DROP TABLE statement argument must be a string.
+[2022-09-06 12:55:03,535] - 5b663cf6-289c-46ac-b9e4-3d5b19be14b6 - INFO - [root:464] - Connection to database (just_test) terminated: Tue Sep  6 12:55:03 2022.
+[2022-09-06 12:56:29,280] - 0464ec30-adc5-4865-8684-22121f170ac0 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:56:29 2022.
+[2022-09-06 12:57:01,168] - b08dddc2-1a44-44cc-b2a4-03825260d4c6 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:57:01 2022.
+[2022-09-06 12:57:20,673] - 824eb194-5ab4-4a14-bf2e-9ffbc7092f7f - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:57:20 2022.
+[2022-09-06 12:57:39,661] - c177b6d8-20e4-464f-8176-fa08838129e2 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:57:39 2022.
+[2022-09-06 12:57:48,618] - c177b6d8-20e4-464f-8176-fa08838129e2 - ERROR - [root:433] - DROP TABLE statement argument must be a string.
+[2022-09-06 12:57:48,619] - c177b6d8-20e4-464f-8176-fa08838129e2 - INFO - [root:464] - Connection to database (just_test) terminated: Tue Sep  6 12:57:48 2022.
+[2022-09-06 12:58:01,746] - 256c1704-62f5-48f0-99cf-819b0130b60a - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 12:58:01 2022.
+[2022-09-06 12:58:37,897] - 256c1704-62f5-48f0-99cf-819b0130b60a - ERROR - [root:411] - Error: DROP TABLE statement can only be used if DBManager is instantiated with advanced_statements as True.
+[2022-09-06 12:58:41,902] - 256c1704-62f5-48f0-99cf-819b0130b60a - ERROR - [root:433] - Error: DROP TABLE statement can only be used if DBManager is instantiated with advanced_statements as True.
+[2022-09-06 12:58:44,814] - 256c1704-62f5-48f0-99cf-819b0130b60a - INFO - [root:464] - Connection to database (just_test) terminated: Tue Sep  6 12:58:44 2022.
+[2022-09-06 13:02:19,496] - eaac3b1d-4585-4a84-bb95-29c47c67d95d - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:02:19 2022.
+[2022-09-06 13:02:19,497] - eaac3b1d-4585-4a84-bb95-29c47c67d95d - INFO - [root:441] - Queue for DROP TABLE SQL (DROP TABLE employee) successful. Don't forget to commit.
+[2022-09-06 13:02:19,498] - eaac3b1d-4585-4a84-bb95-29c47c67d95d - ERROR - [root:453] - Error with DROP TABLE (DROP TABLE employee). Ref: no results to fetch.
+[2022-09-06 13:02:19,498] - eaac3b1d-4585-4a84-bb95-29c47c67d95d - INFO - [root:465] - Connection to database (just_test) terminated: Tue Sep  6 13:02:19 2022.
+[2022-09-06 13:03:32,841] - 749b9975-1f6d-43b8-a581-7c2f09efbc19 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:03:32 2022.
+[2022-09-06 13:03:32,843] - 749b9975-1f6d-43b8-a581-7c2f09efbc19 - INFO - [root:441] - Queue for SELECT SQL (SELECT * FROM employee) successful. Don't forget to commit.
+[2022-09-06 13:03:32,843] - 749b9975-1f6d-43b8-a581-7c2f09efbc19 - INFO - [root:465] - Connection to database (just_test) terminated: Tue Sep  6 13:03:32 2022.
+[2022-09-06 13:04:43,972] - b281a8d9-44e7-48a2-aff6-d4bac7b15a19 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:04:43 2022.
+[2022-09-06 13:04:43,974] - b281a8d9-44e7-48a2-aff6-d4bac7b15a19 - INFO - [root:441] - Queue for DROP TABLE SQL (DROP TABLE employee) successful. Don't forget to commit.
+[2022-09-06 13:04:43,974] - b281a8d9-44e7-48a2-aff6-d4bac7b15a19 - ERROR - [root:453] - Error with DROP TABLE (DROP TABLE employee). Ref: no results to fetch.
+[2022-09-06 13:04:43,979] - b281a8d9-44e7-48a2-aff6-d4bac7b15a19 - INFO - [root:383] - Commit successful.
+[2022-09-06 13:04:43,980] - b281a8d9-44e7-48a2-aff6-d4bac7b15a19 - INFO - [root:465] - Connection to database (just_test) terminated: Tue Sep  6 13:04:43 2022.
+[2022-09-06 13:05:08,046] - 2144cc76-81c0-427f-8187-a5f1c9aa02b4 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:05:08 2022.
+[2022-09-06 13:05:08,047] - 2144cc76-81c0-427f-8187-a5f1c9aa02b4 - ERROR - [root:453] - Error with SELECT (SELECT * FROM employee). Ref: relation "employee" does not exist
+LINE 1: SELECT * FROM employee
+                      ^
+.
+[2022-09-06 13:05:08,047] - 2144cc76-81c0-427f-8187-a5f1c9aa02b4 - INFO - [root:465] - Connection to database (just_test) terminated: Tue Sep  6 13:05:08 2022.
+[2022-09-06 13:06:51,355] - 7b26be8a-3733-4249-bcff-8dc13ceb740f - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:06:51 2022.
+[2022-09-06 13:06:51,356] - 7b26be8a-3733-4249-bcff-8dc13ceb740f - ERROR - [root:453] - Error with SELECT (SELECT * FROM employee). Ref: relation "employee" does not exist
+LINE 1: SELECT * FROM employee
+                      ^
+.
+[2022-09-06 13:06:51,356] - 7b26be8a-3733-4249-bcff-8dc13ceb740f - ERROR - [root:453] - Error with CREATE (CREATE TABLE test()). Ref: current transaction is aborted, commands ignored until end of transaction block
+.
+[2022-09-06 13:06:51,356] - 7b26be8a-3733-4249-bcff-8dc13ceb740f - ERROR - [root:453] - Error with INSERT (INSERT INTO employee(name, state) VALUES('Dan', 'Okay')). Ref: current transaction is aborted, commands ignored until end of transaction block
+.
+[2022-09-06 13:06:51,357] - 7b26be8a-3733-4249-bcff-8dc13ceb740f - ERROR - [root:453] - Error with INSERT (INSERT INTO employee(name, state) VALUES('Steve', 'Meh')). Ref: current transaction is aborted, commands ignored until end of transaction block
+.
+[2022-09-06 13:06:51,357] - 7b26be8a-3733-4249-bcff-8dc13ceb740f - INFO - [root:383] - Commit successful.
+[2022-09-06 13:06:51,357] - 7b26be8a-3733-4249-bcff-8dc13ceb740f - ERROR - [root:453] - Error with SELECT (SELECT * FROM employee). Ref: relation "employee" does not exist
+LINE 1: SELECT * FROM employee
+                      ^
+.
+[2022-09-06 13:06:51,357] - 7b26be8a-3733-4249-bcff-8dc13ceb740f - INFO - [root:465] - Connection to database (just_test) terminated: Tue Sep  6 13:06:51 2022.
+[2022-09-06 13:07:27,036] - 6f2f301b-14e4-4515-b3eb-ee7b074c77d9 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:07:27 2022.
+[2022-09-06 13:07:27,037] - 6f2f301b-14e4-4515-b3eb-ee7b074c77d9 - ERROR - [root:453] - Error with SELECT (SELECT * FROM employee). Ref: relation "employee" does not exist
+LINE 1: SELECT * FROM employee
+                      ^
+.
+[2022-09-06 13:07:27,037] - 6f2f301b-14e4-4515-b3eb-ee7b074c77d9 - ERROR - [root:453] - Error with CREATE (CREATE TABLE test()). Ref: current transaction is aborted, commands ignored until end of transaction block
+.
+[2022-09-06 13:07:27,037] - 6f2f301b-14e4-4515-b3eb-ee7b074c77d9 - ERROR - [root:453] - Error with INSERT (INSERT INTO employee(name, state) VALUES('Dan', 'Okay')). Ref: current transaction is aborted, commands ignored until end of transaction block
+.
+[2022-09-06 13:07:27,037] - 6f2f301b-14e4-4515-b3eb-ee7b074c77d9 - ERROR - [root:453] - Error with INSERT (INSERT INTO employee(name, state) VALUES('Steve', 'Meh')). Ref: current transaction is aborted, commands ignored until end of transaction block
+.
+[2022-09-06 13:07:27,038] - 6f2f301b-14e4-4515-b3eb-ee7b074c77d9 - INFO - [root:383] - Commit successful.
+[2022-09-06 13:07:27,038] - 6f2f301b-14e4-4515-b3eb-ee7b074c77d9 - INFO - [root:465] - Connection to database (just_test) terminated: Tue Sep  6 13:07:27 2022.
+[2022-09-06 13:07:40,116] - 4cb952f3-250b-4040-9eaa-63a746ca715d - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:07:40 2022.
+[2022-09-06 13:07:40,117] - 4cb952f3-250b-4040-9eaa-63a746ca715d - INFO - [root:441] - Queue for CREATE SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 13:07:40,118] - 4cb952f3-250b-4040-9eaa-63a746ca715d - ERROR - [root:453] - Error with INSERT (INSERT INTO employee(name, state) VALUES('Dan', 'Okay')). Ref: relation "employee" does not exist
+LINE 1: INSERT INTO employee(name, state) VALUES('Dan', 'Okay')
+                    ^
+.
+[2022-09-06 13:07:40,119] - 4cb952f3-250b-4040-9eaa-63a746ca715d - ERROR - [root:453] - Error with INSERT (INSERT INTO employee(name, state) VALUES('Steve', 'Meh')). Ref: current transaction is aborted, commands ignored until end of transaction block
+.
+[2022-09-06 13:07:40,119] - 4cb952f3-250b-4040-9eaa-63a746ca715d - INFO - [root:383] - Commit successful.
+[2022-09-06 13:07:40,119] - 4cb952f3-250b-4040-9eaa-63a746ca715d - ERROR - [root:453] - Error with SELECT (SELECT * FROM employee). Ref: relation "employee" does not exist
+LINE 1: SELECT * FROM employee
+                      ^
+.
+[2022-09-06 13:07:40,119] - 4cb952f3-250b-4040-9eaa-63a746ca715d - INFO - [root:465] - Connection to database (just_test) terminated: Tue Sep  6 13:07:40 2022.
+[2022-09-06 13:07:52,903] - e44e902f-ead1-4091-ad42-bd1a35ec2096 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:07:52 2022.
+[2022-09-06 13:07:52,906] - e44e902f-ead1-4091-ad42-bd1a35ec2096 - INFO - [root:441] - Queue for CREATE SQL (CREATE TABLE test()) successful. Don't forget to commit.
+[2022-09-06 13:07:52,909] - e44e902f-ead1-4091-ad42-bd1a35ec2096 - ERROR - [root:453] - Error with INSERT (INSERT INTO employee(name, state) VALUES('Dan', 'Okay')). Ref: relation "employee" does not exist
+LINE 1: INSERT INTO employee(name, state) VALUES('Dan', 'Okay')
+                    ^
+.
+[2022-09-06 13:07:52,910] - e44e902f-ead1-4091-ad42-bd1a35ec2096 - ERROR - [root:453] - Error with INSERT (INSERT INTO employee(name, state) VALUES('Steve', 'Meh')). Ref: current transaction is aborted, commands ignored until end of transaction block
+.
+[2022-09-06 13:07:52,911] - e44e902f-ead1-4091-ad42-bd1a35ec2096 - INFO - [root:383] - Commit successful.
+[2022-09-06 13:07:52,911] - e44e902f-ead1-4091-ad42-bd1a35ec2096 - INFO - [root:465] - Connection to database (just_test) terminated: Tue Sep  6 13:07:52 2022.
+[2022-09-06 13:08:12,934] - 29b540f8-e643-48c0-9d63-edac5c6c52ad - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:08:12 2022.
+[2022-09-06 13:08:12,937] - 29b540f8-e643-48c0-9d63-edac5c6c52ad - INFO - [root:441] - Queue for CREATE SQL (CREATE TABLE employee()) successful. Don't forget to commit.
+[2022-09-06 13:08:12,940] - 29b540f8-e643-48c0-9d63-edac5c6c52ad - ERROR - [root:453] - Error with INSERT (INSERT INTO employee(name, state) VALUES('Dan', 'Okay')). Ref: column "name" of relation "employee" does not exist
+LINE 1: INSERT INTO employee(name, state) VALUES('Dan', 'Okay')
+                             ^
+.
+[2022-09-06 13:08:12,941] - 29b540f8-e643-48c0-9d63-edac5c6c52ad - ERROR - [root:453] - Error with INSERT (INSERT INTO employee(name, state) VALUES('Steve', 'Meh')). Ref: current transaction is aborted, commands ignored until end of transaction block
+.
+[2022-09-06 13:08:12,942] - 29b540f8-e643-48c0-9d63-edac5c6c52ad - INFO - [root:383] - Commit successful.
+[2022-09-06 13:08:12,942] - 29b540f8-e643-48c0-9d63-edac5c6c52ad - INFO - [root:465] - Connection to database (just_test) terminated: Tue Sep  6 13:08:12 2022.
+[2022-09-06 13:09:09,101] - b8c01a00-fbc7-446a-8774-f9c1cb19e158 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:09:09 2022.
+[2022-09-06 13:09:09,106] - b8c01a00-fbc7-446a-8774-f9c1cb19e158 - INFO - [root:441] - Queue for CREATE SQL (CREATE TABLE employee(name VARCHAR(20), state VARCHAR(20))) successful. Don't forget to commit.
+[2022-09-06 13:09:09,106] - b8c01a00-fbc7-446a-8774-f9c1cb19e158 - INFO - [root:441] - Queue for INSERT SQL (INSERT INTO employee(name, state) VALUES('Dan', 'Okay')) successful. Don't forget to commit.
+[2022-09-06 13:09:09,107] - b8c01a00-fbc7-446a-8774-f9c1cb19e158 - INFO - [root:441] - Queue for INSERT SQL (INSERT INTO employee(name, state) VALUES('Steve', 'Meh')) successful. Don't forget to commit.
+[2022-09-06 13:09:09,108] - b8c01a00-fbc7-446a-8774-f9c1cb19e158 - INFO - [root:383] - Commit successful.
+[2022-09-06 13:09:09,108] - b8c01a00-fbc7-446a-8774-f9c1cb19e158 - INFO - [root:465] - Connection to database (just_test) terminated: Tue Sep  6 13:09:09 2022.
+[2022-09-06 13:09:27,212] - 1df8ac6e-df45-481c-b346-39a71cd0e8c2 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:09:27 2022.
+[2022-09-06 13:09:27,212] - 1df8ac6e-df45-481c-b346-39a71cd0e8c2 - INFO - [root:383] - Commit successful.
+[2022-09-06 13:09:27,213] - 1df8ac6e-df45-481c-b346-39a71cd0e8c2 - INFO - [root:441] - Queue for SELECT SQL (SELECT * FROM employee) successful. Don't forget to commit.
+[2022-09-06 13:09:27,213] - 1df8ac6e-df45-481c-b346-39a71cd0e8c2 - INFO - [root:465] - Connection to database (just_test) terminated: Tue Sep  6 13:09:27 2022.
+[2022-09-06 13:10:09,266] - 579c775a-c3a3-4b8a-b9b5-e6df0e098b78 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:10:09 2022.
+[2022-09-06 13:10:09,268] - 579c775a-c3a3-4b8a-b9b5-e6df0e098b78 - INFO - [root:441] - Queue for DROP TABLE SQL (DROP TABLE employee) successful. Don't forget to commit.
+[2022-09-06 13:12:17,596] - 4849a0d8-dba3-4a10-a19f-aa8005c952de - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:12:17 2022.
+[2022-09-06 13:12:20,535] - 4849a0d8-dba3-4a10-a19f-aa8005c952de - INFO - [root:441] - Queue for DROP TABLE SQL (DROP TABLE employee) successful. Don't forget to commit.
+[2022-09-06 13:13:20,103] - 2b06d041-fc72-4b76-b883-f3a6a8b834c9 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:13:20 2022.
+[2022-09-06 13:13:49,150] - 2b06d041-fc72-4b76-b883-f3a6a8b834c9 - INFO - [root:441] - Queue for DROP TABLE SQL (DROP TABLE employee) successful. Don't forget to commit.
+[2022-09-06 13:14:55,249] - dc75d5a6-30ce-437b-b5c2-a990aacec2ba - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:14:55 2022.
+[2022-09-06 13:15:16,176] - dc75d5a6-30ce-437b-b5c2-a990aacec2ba - INFO - [root:441] - Queue for DROP TABLE SQL (DROP TABLE employee) successful. Don't forget to commit.
+[2022-09-06 13:17:59,881] - 0e1ab72d-f4b8-4e82-950a-2ce8d52297b5 - INFO - [root:348] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:17:59 2022.
+[2022-09-06 13:17:59,882] - 0e1ab72d-f4b8-4e82-950a-2ce8d52297b5 - INFO - [root:441] - Queue for DROP TABLE SQL (DROP TABLE employee) successful. Don't forget to commit.
+[2022-09-06 13:17:59,883] - 0e1ab72d-f4b8-4e82-950a-2ce8d52297b5 - INFO - [root:465] - Connection to database (just_test) terminated: Tue Sep  6 13:17:59 2022.
+[2022-09-06 13:58:53,061] - 3f81a660-ac8d-4649-accc-c0c1276c2063 - INFO - [root:344] - Connection to database (just_test) established on attempt 1: Tue Sep  6 13:58:53 2022.
+[2022-09-06 13:58:53,062] - 3f81a660-ac8d-4649-accc-c0c1276c2063 - INFO - [root:411] - Queue for DROP TABLE SQL (DROP TABLE employee) successful. Don't forget to commit.
+[2022-09-06 13:58:53,062] - 3f81a660-ac8d-4649-accc-c0c1276c2063 - INFO - [root:370] - Connection to database (just_test) terminated: Tue Sep  6 13:58:53 2022.
+[2022-09-06 14:11:03,315] - 1da1ace8-e6d7-4c53-897f-1fe78f9a36dd - INFO - [root:344] - Connection to database (just_test) established on attempt 1: Tue Sep  6 14:11:03 2022.
+[2022-09-06 14:11:03,317] - 1da1ace8-e6d7-4c53-897f-1fe78f9a36dd - INFO - [root:411] - Queue for DROP TABLE SQL (DROP TABLE employee) successful. Don't forget to commit.
+[2022-09-06 14:11:03,322] - 1da1ace8-e6d7-4c53-897f-1fe78f9a36dd - INFO - [root:379] - Commit successful.
+[2022-09-06 14:11:03,322] - 1da1ace8-e6d7-4c53-897f-1fe78f9a36dd - INFO - [root:370] - Connection to database (just_test) terminated: Tue Sep  6 14:11:03 2022.
+[2022-09-06 14:13:04,465] - 9bc67cb0-f966-4bd3-b2d5-505bbb787003 - INFO - [root:344] - Connection to database (just_test) established on attempt 1: Tue Sep  6 14:13:04 2022.
+[2022-09-06 14:13:04,467] - 9bc67cb0-f966-4bd3-b2d5-505bbb787003 - INFO - [root:411] - Queue for CREATE SQL (CREATE TABLE employee(name VARCHAR(20), state VARCHAR(20))) successful. Don't forget to commit.
+[2022-09-06 14:13:04,468] - 9bc67cb0-f966-4bd3-b2d5-505bbb787003 - INFO - [root:411] - Queue for INSERT SQL (INSERT INTO employee(name, state) VALUES('Dan', 'Okay')) successful. Don't forget to commit.
+[2022-09-06 14:13:04,468] - 9bc67cb0-f966-4bd3-b2d5-505bbb787003 - INFO - [root:411] - Queue for INSERT SQL (INSERT INTO employee(name, state) VALUES('Steve', 'Meh')) successful. Don't forget to commit.
+[2022-09-06 14:13:04,470] - 9bc67cb0-f966-4bd3-b2d5-505bbb787003 - INFO - [root:411] - Queue for SELECT SQL (SELECT * FROM employee) successful. Don't forget to commit.
+[2022-09-06 14:13:04,474] - 9bc67cb0-f966-4bd3-b2d5-505bbb787003 - INFO - [root:379] - Commit successful.
+[2022-09-06 14:14:40,808] - 306d4eee-2868-4554-b567-dfd68502e3a8 - INFO - [root:344] - Connection to database (just_test) established on attempt 1: Tue Sep  6 14:14:40 2022.
+[2022-09-06 14:14:40,808] - 306d4eee-2868-4554-b567-dfd68502e3a8 - INFO - [root:370] - Connection to database (just_test) terminated: Tue Sep  6 14:14:40 2022.
+[2022-09-06 14:15:57,548] - 3f44d3a8-be18-4f04-8eac-af51d86224f8 - ERROR - [root:349] - Error connecting to database (just_bad) on attempt 1.
+[2022-09-06 14:15:59,565] - 3f44d3a8-be18-4f04-8eac-af51d86224f8 - ERROR - [root:349] - Error connecting to database (just_bad) on attempt 2.
+[2022-09-06 14:16:01,577] - 3f44d3a8-be18-4f04-8eac-af51d86224f8 - ERROR - [root:349] - Error connecting to database (just_bad) on attempt 3.
+[2022-09-06 14:16:03,578] - 3f44d3a8-be18-4f04-8eac-af51d86224f8 - ERROR - [root:357] - Failed to connect with database (just_bad). Maximum attempts reached (4).
+[2022-09-06 14:16:03,579] - 3f44d3a8-be18-4f04-8eac-af51d86224f8 - ERROR - [root:358] - connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  database "just_bad" does not exist
+
+[2022-09-06 14:16:03,579] - 3f44d3a8-be18-4f04-8eac-af51d86224f8 - ERROR - [root:417] - Connection to database (just_bad) needs to be established before SELECT statement.
+[2022-09-06 14:16:03,579] - 3f44d3a8-be18-4f04-8eac-af51d86224f8 - ERROR - [root:372] - No database cursor to disconnect from.

@@ -6,30 +6,9 @@
     Provide a simplistic tool for interfacing with a Postgres database.
 
 # Description:
-    Class DBManager allows the execution of CREATE TABLE, INSERT INTO, and SELECT sql
-    statements. More powerful statements such as CREATE DATABASE or DROP TABLE are not
-    supported on purpose. Class provides simple checking for table_sql, insert_sql, and
-    select_sql key/values to catch common mistakes, but is not intended to stop
-    malicious intent.
-    DBManager arguments:
-    connection_info(dict): DB connection specs and sql statement info.
-        example:
-            'database': 'test_db',  # database name
-            'user': 'superman',  # username
-            'password': '1234567',  # password
-            'host': 'localhost',  # host name
-            'port': '5432',  # port number
-            'table_sql': None,  # sql statement for table creation
-            'insert_sql': None,  # sql statement for insert
-            'select_sql': None  # sql statement for select
-        table_sql, insert_sql, and select_sql fields must only contain their
-        related sql statements. Ex. select_sql should only contain a
-        SELECT statement.
-
-# Attributes:
-    CON_SLEEP: Seconds between database connection attempts.
-    MAX_ATTEMPTS: Default number of attempts when trying to connect with database.
-    SELECT_RESULTS: Number of db tables rows to print to screen with select statement.
+    Class DBManager allows the execution of sql statements. Class provides
+    simple checking for sql queries to catch common mistakes, but is not
+    intended to stop malicious intent.
 
 # Composition Attributes:
     Line length = 88 characters.
@@ -41,45 +20,63 @@
 # Usage Example:
     from postgres_manager import DBManager
 
+    insert1 = "INSERT INTO employee(name, state) VALUES('Dan', 'Okay')"
+    insert2 = "INSERT INTO employee(name, state) VALUES('Steve', 'Meh')"
+    table = "CREATE TABLE employee(name VARCHAR(20), state VARCHAR(20))"
     select = "SELECT * FROM employee"
-    insert = "INSERT INTO employee(name, state) VALUES('Shayla', 'Great')"
 
-    x = {
+    connection_info = {
         'database': 'just_test',  # database name
         'user': 'me',  # username
         'password': '1234567',  # password
         'host': 'localhost',  # host name
         'port': '5432',  # port number
-        'table_sql': None,  # sql statement for table creation
-        'insert_sql': insert,  # sql statement for insert
-        'select_sql': select  # sql statement for select
     }
     
-    y = DBManager(x)
+    y = DBManager(connection_info, verbose=True)
+    y.connect()  # Connect to database.
+    y.create(table)
+    y.insert(insert1)
+    y.insert(insert2)
+    y.commit()  # Commit changes to database.
+    return = y.select(select)  # Returns a list of tuples containing the select statement results.
+    y.disconnect()  # Disconnect from database.
+    print(return)
 
 ## Prints to terminal:
-    Connection to database (just_test) established on attempt 1.
-    Queue for Insert SQL successful.
-    Queue for Select SQL successful.
-
-    Displaying select statement results...
-    [(1, 'graham', 'Amazing'), (2, 'Shayla', 'Great')]
-
-    Attempting commit to database...
+    Connection to database (just_test) established on attempt 1: Tue Sep  6 14:13:04 2022.
+    Queue for CREATE SQL (CREATE TABLE employee(name VARCHAR(20), state VARCHAR(20))) successful. Don't forget to commit.
+    Queue for INSERT SQL (INSERT INTO employee(name, state) VALUES('Dan', 'Okay')) successful. Don't forget to commit.
+    Queue for INSERT SQL (INSERT INTO employee(name, state) VALUES('Steve', 'Meh')) successful. Don't forget to commit.
+    Queue for SELECT SQL (SELECT * FROM employee) successful. Don't forget to commit.
     Commit successful.
-    Connection to database (just_test) terminated.
-    DBManager took 0.015147s to run.
+    Connection to database (just_test) terminated: Tue Sep  6 14:14:40 2022.
+    [('Dan', 'Okay'), ('Steve', 'Meh')]
     
-## Returns a list of tuples accessable in the instance.select_return attribute:
-    print(y.select_return)
-    
-    [(1, 'graham', 'Amazing'), (2, 'Shayla', 'Great')]
-    
-## Example terminal feedback during error displaying useful information.
+## Example usage causing error when database does not exist.
+
+    connection_info = {
+        'database': 'just_bad',  # bad database name
+        'user': 'me',  # username
+        'password': '1234567',  # password
+        'host': 'localhost',  # host name
+        'port': '5432',  # port number
+    }
+
+    select = "SELECT * FROM employee"
+
+    y = DBManager(connection_info, verbose=True)
+    y.connect()
+    lst = y.select(select)
+    y.disconnect()
+
+## Prints to terminal:
     Error connecting to database (just_bad) on attempt 1.
     Error connecting to database (just_bad) on attempt 2.
     Error connecting to database (just_bad) on attempt 3.
     Failed to connect with database (just_bad). Maximum attempts reached (4).
-    Creation of database cursor failed.
-    ('Failed to connect with database (just_bad). Maximum attempts reached (4).', OperationalError('connection to server at "localhost" (127.0.0.1),   port 5432 failed: FATAL:  database "just_bad" does not exist\n'))
-    DBManager took 6.041313s to run.
+    connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  database "just_bad" does not exist
+
+    Connection to database (just_bad) needs to be established before SELECT statement.
+    No database cursor to disconnect from.
+

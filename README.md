@@ -80,3 +80,10 @@
     Connection to database (just_bad) needs to be established before SELECT statement.
     No database cursor to disconnect from.
 
+## Example output for external log file from successful use case:
+	[2022-09-06 23:41:25,099] - eb1b850c-9944-49ac-8e1e-fefbc3e09622 - INFO - [root:344] - Connection to database (just_test) established on attempt 1: Tue Sep  6 23:41:25 2022.
+	[2022-09-06 23:41:25,107] - eb1b850c-9944-49ac-8e1e-fefbc3e09622 - INFO - [root:410] - Queue for INSERT SQL (INSERT INTO employee(name, state) VALUES('Dan', 'Okay')) successful.
+	[2022-09-06 23:41:25,108] - eb1b850c-9944-49ac-8e1e-fefbc3e09622 - INFO - [root:410] - Queue for INSERT SQL (INSERT INTO employee(name, state) VALUES('Steve', 'Meh')) successful.
+	[2022-09-06 23:41:25,109] - eb1b850c-9944-49ac-8e1e-fefbc3e09622 - INFO - [root:379] - Commit successful.
+	[2022-09-06 23:41:25,111] - eb1b850c-9944-49ac-8e1e-fefbc3e09622 - INFO - [root:410] - Queue for SELECT SQL (SELECT * FROM employee) successful.
+	[2022-09-06 23:41:25,111] - eb1b850c-9944-49ac-8e1e-fefbc3e09622 - INFO - [root:370] - Connection to database (just_test) terminated: Tue Sep  6 23:41:25 2022.
